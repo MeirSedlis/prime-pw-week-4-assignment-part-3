@@ -40,6 +40,13 @@ listItems(basket);
 // CREATE FUNCTION empty
 
 function empty(){
-    basket= [];
+    basket = [];
 } // end function empty
 
+empty();
+console.log('Testing empty function expect [] =>', basket);
+
+addItem('impulse candy');
+console.log('added item, expect impulse candy =>', basket);
+empty();
+console.log('Testing empty function expect [] =>', basket);
