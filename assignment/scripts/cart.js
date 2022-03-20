@@ -4,17 +4,28 @@ console.log('***** Cart Functions *****');
 
 
 let basket = [];
-let item = 'banana';
+let item= '';
 
 // CREATE FUNCTION addItem
-function addIdtem('item')
 // INPUT: parameter string 'item'
 // CODE adding the idem to the cart
 // OUPUT: return true that the item was added
 
+function addItem(item){
+    basket.push(item);
+    return true;
+} // end addItem
+
+console.log('In addItem adding coffee to the basket', addItem('coffee'), 'expect coffee =>', basket);
+console.log('In addItem adding milk to the basket', addItem('milk'), 'expect coffee, milk =>', basket);
+console.log('In addItem adding sugar to the basket', addItem('sugar'), 'expect coffee, milk, sugar =>', basket);
+
 // CREATE FUNCTION listItems
 // INPUT: the basket array
 // OUTPUT: a console.log of each individual item on a new line
+
+
+
 
 // CREATE FUNCTION empty
 
