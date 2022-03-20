@@ -24,7 +24,17 @@ console.log('In addItem adding sugar to the basket', addItem('sugar'), 'expect c
 // INPUT: the basket array
 // OUTPUT: a console.log of each individual item on a new line
 
+function listItems(basket){
+    for(let i=0; i <basket.length; i++){
+        console.log(basket[i])
+    } // end for loop
+} // end listItems
 
+console.log('testing listItems expect basket values below')
+listItems(basket);
+addItem('chocoloate syrup');
+console.log('added chocolate syrup. what do I have in the basket now?')
+listItems(basket);
 
 
 // CREATE FUNCTION empty
